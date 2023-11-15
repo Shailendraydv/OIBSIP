@@ -18,7 +18,7 @@ path=os.path.dirname(os.path.abspath(__file__))
 car_data = pd.read_csv(path+'\car data.csv')
 prep(car_data)
 
-# Assume your dataset has relevant columns for features and the target variable
+# Assume our dataset has relevant columns for features and the target variable
 # Adjust these column names based on your actual dataset
 X = car_data[['Year', 'Selling_Price', 'Driven_kms','Fuel_Type','Transmission']]
 y = car_data['Present_Price']
